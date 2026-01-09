@@ -1,0 +1,24 @@
+.link-button {
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 0.6em 0em;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.link-button:hover {
+  outline: 2px solid #5b6370;
+}
+.link-button.secondary{
+  background-color: var(--tertiary-color);
+  color: white;
+}
+.link-button.secondary:hover{
+  outline: 2px solid #1e848b;
+}
+.link-button:focus,
+.link-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
