@@ -7,11 +7,14 @@ function Home() {
   function barrelRoll() {
     if (rolling) return;
     setRolling(true);
-    document.body.classList.add('barrel-roll');
-    setTimeout(() => {
-      document.body.classList.remove('barrel-roll');
-      setRolling(false);
-    }, 1000);
+    const home = document.getElementById('home');
+    if (home) {
+      home.classList.add('barrel-roll');
+      setTimeout(() => {
+        home.classList.remove('barrel-roll');
+        setRolling(false);
+      }, 1000);
+    }
   }
 
   function playName(name: string) {
@@ -24,19 +27,22 @@ function Home() {
   }
 
  return (
-    <>
+    <div id='home'>
     {/* Title and Pronunciation Info */}
       <div className="title-with-info">
         <div className='title'>
-          <h1 className="name" tabIndex={0} role="button" onClick={() =>playName('Stephen')}>Stephen</h1>
-          <h1 className="name" tabIndex={0} role="button" onClick={() =>playName('Stefanidis')}>Stefanidis</h1>
+          <h1 className="name" role="button" onClick={() =>playName('Stephen')}>Stephen</h1>
+          <h1 className="name" role="button" onClick={() =>playName('Stefanidis')}>Stefanidis</h1>
         </div>
         <p className="info">
-          Click on my names to hear the pronunciation (soundbites from <a href="https://www.howtopronounce.com" target="_blank" rel="noopener noreferrer">https://www.howtopronounce.com</a>)
+          Click on my first and last name to hear the pronunciation
+        </p>
+        <p className="info">
+          (soundbites from <a href="https://www.howtopronounce.com" target="_blank" rel="noopener noreferrer">https://www.howtopronounce.com</a>)
         </p>
       </div>
       {/* Navigation Buttons */}
-      <nav className="nav">
+      <nav className="nav vertical-nav">
         <LinkButton to="/about">About</LinkButton>
         <button>Projects</button>
         <button>Contact</button>
@@ -61,7 +67,7 @@ function Home() {
           </svg>
         </a>
       </div>
-    </>
+    </div>
  );
 }
 

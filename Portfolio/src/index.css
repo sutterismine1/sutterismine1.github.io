@@ -4,7 +4,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: var(--primary-color);
 
   font-synthesis: none;
@@ -19,11 +18,13 @@
 
 a {
   font-weight: 500;
-  color: #4FD1D9;
+  /*color: #4FD1D9;*/
+  color: var(--link-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #00f2ff;
+  /*color: #00f2ff;*/
+  color: var(--link-hover-color);
 }
 
 body {
@@ -34,7 +35,7 @@ body {
   min-height: 100vh;
 }
 
-body.barrel-roll {
+#home.barrel-roll {
   animation: barrel-roll 1s ease-in-out;
   overflow: hidden;
 }
@@ -65,52 +66,46 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  outline: 2px solid #5b6370;
+  /*outline: 2px solid #5b6370;*/
+  outline: 2px solid var(--button-hover-outline);
 }
 button.secondary{
   background-color: var(--tertiary-color);
   color: white;
 }
 button.secondary:hover{
-  outline: 2px solid #1e848b;
+  /*outline: 2px solid #1e848b;*/
+  outline: 2px solid var(--button-secondary-hover-outline);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: var(--primary-color);
+:root[data-theme='light'] {
+  color: #213547;
+  background-color: var(--primary-color);
 
-    
-    --primary-color: #F9F7F7;
-    --secondary-color: #DBE2EF;
-    --tertiary-color: #3F72AF;
-  }
-  /*a:hover {
-    color: #747bff;
-  }*/
-  a {
-    color: #2F5D9A;
-  }
-  a:hover {
-    color: #5A8FD6;
-  }
+  
+  --primary-color: #F9F7F7;
+  --secondary-color: #DBE2EF;
+  --tertiary-color: #3F72AF;
+  --link-color: #2F5D9A;
+  --link-hover-color: #5A8FD6;
+  --button-hover-outline: #98acd1;
+  --button-secondary-hover-outline: #2b4d77;
+  --text-color: #213547;
+}
+:root[data-theme='dark'] {
+  color: #E1E1E1;
+  background-color: var(--primary-color);
 
-
-  button {
-    background-color: var(--secondary-color);
-  }
-  button.secondary{
-    background-color: var(--tertiary-color);
-    color: white;
-  }
-  button:hover {
-    outline: 2px solid #98acd1;
-  }
-  button.secondary:hover{
-    outline: 2px solid #2b4d77;
-  }
+  --primary-color: #222831;
+  --secondary-color: #393E46;
+  --tertiary-color: #00ADB5;
+  --link-color: #4FD1D9;
+  --link-hover-color: #00f2ff;
+  --button-hover-outline: #5b6370;
+  --button-secondary-hover-outline: #1e848b;
+  --text-color: #E1E1E1;
 }

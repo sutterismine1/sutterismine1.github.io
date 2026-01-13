@@ -33,6 +33,7 @@
 
 .info {
   color: #888;
+  margin: 0;
 }
 
 .name {
@@ -55,7 +56,7 @@
   row-gap: 0.5rem;
 }
 
-.nav{
+.vertical-nav{
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -82,20 +83,49 @@
   fill: currentColor;
 }
 
+/* Top Menu Styles */
+
+.top-menu{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  left: 0px;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.right-menu{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+/* Navigation Styles */
+
 .nav a{
   text-decoration: none;
   color: inherit;
+}
+
+.nav button{
+  color: inherit
 }
 
 .nav .link-button{
   width: 150px;
 }
 
-.hamburger-wrapper{
+.desktop-nav{
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
 }
+
+/* Hamburger Menu Styles */
 
 .hamburger-nav{
   position: absolute;
@@ -107,19 +137,61 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.home-button-wrapper{
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+.hamburger-wrapper{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
 }
+
+@media (min-width: 768px) {
+  .hamburger-wrapper {
+    display: none;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+/* Home Button Styles */
 .home-button{
+  display: flex;
+  align-content: center;
   color: inherit;
   text-decoration: none;
   position: relative;
+  margin-left: 1rem;
 }
 
 .home-icon{
   color: inherit;
-  position: absolute;
-  top: 5px;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle{
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-toggle__classic {
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+}
+
+.theme-toggle-wrapper{
+  width: 46px;
+  height: 46px;
+  margin-right: 1rem;
+}
+
+.theme-toggle:hover{
+  outline: none;
 }

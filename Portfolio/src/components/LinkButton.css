@@ -9,14 +9,14 @@
   transition: border-color 0.25s;
 }
 .link-button:hover {
-  outline: 2px solid #5b6370;
+  outline: 2px solid var(--button-hover-outline);
 }
 .link-button.secondary{
   background-color: var(--tertiary-color);
   color: white;
 }
 .link-button.secondary:hover{
-  outline: 2px solid #1e848b;
+  outline: 2px solid var(--button-hover-outline);
 }
 .link-button:focus,
 .link-button:focus-visible {

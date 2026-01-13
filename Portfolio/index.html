@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css"> <!-- Theme Toggle CSS from https://toggles.dev/ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stephen's Portfolio</title>
+    <style>
+        html {
+          background-color: #121212;
+          color: #EAEAEA;
+        }
+    </style>
+    <script>
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = prefersDark ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", theme);
+    </script>
   </head>
   <body>
     <div id="root"></div>
