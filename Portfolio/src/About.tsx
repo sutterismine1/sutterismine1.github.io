@@ -39,6 +39,7 @@ function About(){
             <section>
                 <h2>Hobbies</h2>
                 <ul>
+                    <li><strong>Guitar</strong> - I love playing the guitar whenever</li>
                 </ul>
             </section>
         </div>
