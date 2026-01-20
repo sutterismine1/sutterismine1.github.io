@@ -1,4 +1,5 @@
 import About from './About.tsx';
+import Projects from './Projects.tsx';
 import Home from './Home.tsx';
 import { useTheme  } from './ThemeContext.tsx';
 import { Routes, Route, useLocation, Link } from 'react-router-dom';
@@ -23,7 +24,7 @@ function App() {
         )}
         <nav className="nav desktop-nav">
           <LinkButton to="/about">About</LinkButton>
-          <button>Projects</button>
+          <LinkButton to="/projects">Projects</LinkButton>
           <button>Contact</button>
         </nav>
         <div className="right-menu">
@@ -42,16 +43,16 @@ function App() {
                 width="1em"
                 height="1em"
                 fill="currentColor"
-                stroke-linecap="round"
+                strokeLinecap="round"
                 className="theme-toggle__classic"
                 viewBox="0 0 32 32"
               >
                 <clipPath id="theme-toggle__classic__cutout">
                   <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
                 </clipPath>
-                <g clip-path="url(#theme-toggle__classic__cutout)">
+                <g clipPath="url(#theme-toggle__classic__cutout)">
                   <circle cx="16" cy="16" r="9.34" />
-                  <g stroke="currentColor" stroke-width="1.5">
+                  <g stroke="currentColor" strokeWidth="1.5">
                     <path d="M16 5.5v-4" />
                     <path d="M16 30.5v-4" />
                     <path d="M1.5 16h4" />
@@ -73,13 +74,14 @@ function App() {
       {isOpen ? (
       <nav className="nav vertical-nav hamburger-nav">
         <LinkButton to="/about">About</LinkButton>
-        <button>Projects</button>
+        <LinkButton to="/projects">Projects</LinkButton>
         <button>Contact</button>
       </nav>)
       : null}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </>
   )
