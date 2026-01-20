@@ -39,7 +39,26 @@ function About(){
             <section>
                 <h2>Hobbies</h2>
                 <ul>
-                    <li><strong>Guitar</strong> - I love playing the guitar whenever</li>
+                    <li><strong>Guitar</strong> - I play regularly, take weekly lessons, and perform
+                        with my church's worship team. I also enjoy casual jam sessions with my dad,
+                        who plays bass.
+                    </li>
+                    <li><strong>Video games</strong> - I enjoy competitive shooters and MMO RPGs,
+                        especially games that reward strategy, coordination, and well-defined roles.
+                    </li>
+                    <li><strong>Reading</strong> - I read science fiction, horror, and fantasy.
+                        Recently, I've been reading
+                        <a href="https://www.amazon.ca/Blood-Meridian-Evening-Redness-West/dp/0679728759" target="_blank" rel="noopener noreferrer">
+                            <em> Blood Meridian </em>
+                        </a>
+                        by Cormac McCarthy.
+                    </li>
+                    <li><strong>Roller coasters</strong> - I'm a coaster enthusiast with over
+                        100 different coasters ridden across North America. I enjoy learning about
+                        ride design and engineering, and I keep track of my rides in a <a href="https://docs.google.com/spreadsheets/d/1TPIaoSJ712eyUFAt7aaeMTyQL7wreS7rQUR3jmHx5Jc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            spreadsheet
+                        </a>.
+                    </li>
                 </ul>
             </section>
         </div>
