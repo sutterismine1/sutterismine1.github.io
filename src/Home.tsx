@@ -29,17 +29,12 @@ function Home() {
  return (
     <div id='home'>
     {/* Title and Pronunciation Info */}
-      <div className="title-with-info">
+      <div className='name-and-role'>
         <div className='title'>
           <h1 className="name" role="button" onClick={() =>playName('Stephen')}>Stephen</h1>
           <h1 className="name" role="button" onClick={() =>playName('Stefanidis')}>Stefanidis</h1>
         </div>
-        <p className="info">
-          Click on my first and last name to hear the pronunciation
-        </p>
-        <p className="info">
-          (soundbites from <a href="https://www.howtopronounce.com" target="_blank" rel="noopener noreferrer">https://www.howtopronounce.com</a>)
-        </p>
+        <h2 className='role'>Software Developer</h2>
       </div>
       {/* Navigation Buttons */}
       <nav className="nav vertical-nav">
