@@ -109,3 +109,7 @@ button:focus-visible {
   --button-secondary-hover-outline: #1e848b;
   --text-color: #E1E1E1;
 }
+
+html {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

@@ -14,8 +14,8 @@ function About(){
             <section>
                 <h2>Programming Languages</h2>
                 <p>
-                    I primarily work with Python, JavaScript/TypeScript, and C#. I also have experience
-                    with Java and C++ through academic and personal projects. Lately, I've been learning
+                    I primarily work with Python and JavaScript/TypeScript. I also have experience
+                    with Java, C# and C++ through academic and personal projects. Lately, I've been learning
                     Rust using the Brown University interactive <a href="https://rust-book.cs.brown.edu/" target="_blank" rel="noopener noreferrer"><em>Rust Programming Language</em></a> book, and I enjoy how it forces
                     you to think carefully about correctness and ownership.
                 </p>

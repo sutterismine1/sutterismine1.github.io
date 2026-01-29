@@ -1,0 +1,18 @@
+.recursion-counter-toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.recursion-counter-toast.show {
+    opacity: 1;
+}
