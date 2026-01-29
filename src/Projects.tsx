@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
         const body = document.body;
         body.style.display = 'none';
         setTimeout(() => {
-            body.style.display = 'block';
+            body.style.display = 'flex';
         }, 100);
         incrementCount();
         const element = document.getElementById('rec');
