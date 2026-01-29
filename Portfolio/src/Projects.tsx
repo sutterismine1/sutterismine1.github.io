@@ -40,7 +40,13 @@ const Projects: React.FC = () => {
 
 
     function recursionTrick() {
+        // fakes a page refresh and displays a joke message
         window.scrollTo(0,0);
+        const body = document.body;
+        body.style.display = 'none';
+        setTimeout(() => {
+            body.style.display = 'block';
+        }, 100);
         incrementCount();
         const element = document.getElementById('rec');
         element?.classList.add('show');
