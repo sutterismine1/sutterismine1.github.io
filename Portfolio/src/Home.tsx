@@ -45,7 +45,7 @@ function Home() {
       <nav className="nav vertical-nav">
         <LinkButton to="/about">About</LinkButton>
         <LinkButton to="/projects">Projects</LinkButton>
-        <button>Contact</button>
+        <LinkButton to="/contact">Contact</LinkButton>
       </nav>
       {/* Gimmick Barrel Roll Button */}
       <div className="card">

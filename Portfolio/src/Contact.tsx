@@ -1,4 +1,3 @@
-import React, { useState, FormEvent } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css';
 

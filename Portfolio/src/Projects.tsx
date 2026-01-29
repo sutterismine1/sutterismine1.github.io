@@ -5,6 +5,7 @@ import './Projects.css';
 import { useTheme } from './ThemeContext.tsx';
 import  {RecursionCounterToast}  from './components/RecursionCounterToast.tsx';
 
+
 interface Project {
     id: number;
     title: string;
