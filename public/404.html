@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // Preserve the path and query string
+      const redirect = location.pathname + location.search + location.hash;
+      sessionStorage.setItem('redirect', redirect);
+      location.replace('/');
+    </script>
   </head>
+  <body></body>
 </html>
-
-<!-- This page is designed to redirect to the homepage immediately if a user refreshes on github pages because they do not support single-page app routing -->

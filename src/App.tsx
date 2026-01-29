@@ -2,8 +2,8 @@ import About from './About.tsx';
 import Projects from './Projects.tsx';
 import Home from './Home.tsx';
 import { useTheme  } from './ThemeContext.tsx';
-import { Routes, Route, useLocation, Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Routes, Route, useLocation, Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react';
 import { FaHome } from 'react-icons/fa';
 import { LinkButton } from './components/LinkButton.tsx';
@@ -11,6 +11,16 @@ import './App.css';
 import Contact from './Contact.tsx';
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirect = sessionStorage.getItem('redirect');
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      navigate(redirect, { replace: true });
+    }
+  }, [navigate]);
+
   const location = useLocation();
   const isHome = location.pathname === '/';
   const [isOpen, setIsOpen] = useState(false);
