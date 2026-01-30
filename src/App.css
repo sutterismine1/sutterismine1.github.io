@@ -38,7 +38,12 @@
 
 .name {
   cursor: pointer;
+  margin: 0;
   margin-bottom: 0.75rem;
+}
+
+.name-and-role{
+  margin-top: 1rem;
 }
 
 .role {
