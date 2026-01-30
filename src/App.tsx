@@ -95,6 +95,12 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      { !isHome && (
+      <div className="footer">
+        <span>© {new Date().getFullYear()} Stephen Stefanidis</span>
+        <a href="https://github.com/sutterismine1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/stephenstefanidis" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>)}
     </>
   )
 }
