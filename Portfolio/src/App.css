@@ -195,3 +195,14 @@
 .theme-toggle:hover{
   outline: none;
 }
+
+.footer{
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.footer a{
+  margin-left: 0.75rem;
+}

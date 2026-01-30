@@ -8,6 +8,7 @@ import Hamburger from 'hamburger-react';
 import { FaHome } from 'react-icons/fa';
 import { LinkButton } from './components/LinkButton.tsx';
 import './App.css';
+import Contact from './Contact.tsx';
 
 function App() {
   const location = useLocation();
@@ -25,7 +26,7 @@ function App() {
         <nav className="nav desktop-nav">
           <LinkButton to="/about">About</LinkButton>
           <LinkButton to="/projects">Projects</LinkButton>
-          <button>Contact</button>
+          <LinkButton to="/contact">Contact</LinkButton>
         </nav>
         <div className="right-menu">
           {/* Theme Toggle Button - From https://toggles.dev/ */}
@@ -75,14 +76,21 @@ function App() {
       <nav className="nav vertical-nav hamburger-nav">
         <LinkButton to="/about">About</LinkButton>
         <LinkButton to="/projects">Projects</LinkButton>
-        <button>Contact</button>
+        <LinkButton to="/contact">Contact</LinkButton>
       </nav>)
       : null}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      { !isHome && (
+      <div className="footer">
+        <span>© {new Date().getFullYear()} Stephen Stefanidis</span>
+        <a href="https://github.com/sutterismine1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/stephenstefanidis" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>)}
     </>
   )
 }
