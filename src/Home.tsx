@@ -37,19 +37,19 @@ function Home() {
         <h2 className='role'>Software Developer</h2>
       </div>
       {/* Navigation Buttons */}
-      <nav className="nav vertical-nav">
+      <nav className="nav vertical-nav" data-nosnippet>
         <LinkButton to="/about">About</LinkButton>
         <LinkButton to="/projects">Projects</LinkButton>
         <LinkButton to="/contact">Contact</LinkButton>
       </nav>
       {/* Gimmick Barrel Roll Button */}
-      <div className="card">
+      <div className="card" data-nosnippet>
         <button className="secondary" onClick={() => barrelRoll()}>
           Do a barrel roll!
         </button>
       </div>
       {/* Social Media Links */}
-      <div className="social-media">
+      <div className="social-media" data-nosnippet>
         <a href="https:/www.github.com/sutterismine1" target="_blank" rel="noopener noreferrer">
           <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <title>GitHub</title>
