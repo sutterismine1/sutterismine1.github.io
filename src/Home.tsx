@@ -1,7 +1,7 @@
 import { LinkButton } from './components/LinkButton.tsx';
 import { useState } from 'react';
 
-function Home() {
+function Home({ setIsOpen }: { setIsOpen: (isOpen: boolean) => void }) {
   const [rolling, setRolling] = useState(false);
 
   function barrelRoll() {
@@ -38,9 +38,9 @@ function Home() {
       </div>
       {/* Navigation Buttons */}
       <nav className="nav vertical-nav" data-nosnippet>
-        <LinkButton to="/about">About</LinkButton>
-        <LinkButton to="/projects">Projects</LinkButton>
-        <LinkButton to="/contact">Contact</LinkButton>
+        <LinkButton to="/about" onClick={() => setIsOpen(false)}>About</LinkButton>
+        <LinkButton to="/projects" onClick={() => setIsOpen(false)}>Projects</LinkButton>
+        <LinkButton to="/contact" onClick={() => setIsOpen(false)}>Contact</LinkButton>
       </nav>
       {/* Gimmick Barrel Roll Button */}
       <div className="card" data-nosnippet>

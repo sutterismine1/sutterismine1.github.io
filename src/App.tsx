@@ -31,7 +31,7 @@ function App() {
       <div className="top-menu">
         {isHome ? null 
         : (
-          <Link className="home-button" to={"/"}><FaHome className="home-icon" size={32} /></Link>
+          <Link className="home-button" to={"/"} onClick={() => setIsOpen(false)}><FaHome className="home-icon" size={32} /></Link>
         )}
         <nav className="nav desktop-nav">
           <LinkButton to="/about">About</LinkButton>
@@ -84,13 +84,13 @@ function App() {
       </div>
       {isOpen ? (
       <nav className="nav vertical-nav hamburger-nav">
-        <LinkButton to="/about">About</LinkButton>
-        <LinkButton to="/projects">Projects</LinkButton>
-        <LinkButton to="/contact">Contact</LinkButton>
+        <LinkButton to="/about" onClick={() => setIsOpen(false)}>About</LinkButton>
+        <LinkButton to="/projects" onClick={() => setIsOpen(false)}>Projects</LinkButton>
+        <LinkButton to="/contact" onClick={() => setIsOpen(false)}>Contact</LinkButton>
       </nav>)
       : null}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setIsOpen={setIsOpen} />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
