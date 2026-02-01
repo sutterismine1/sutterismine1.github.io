@@ -1,8 +1,12 @@
 import { LinkButton } from './components/LinkButton.tsx';
-import { useState } from 'react';
+import { useState, useEffect, use } from 'react';
 
 function Home({ setIsOpen }: { setIsOpen: (isOpen: boolean) => void }) {
   const [rolling, setRolling] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Stephen\'s Portfolio';
+  }, []);
 
   function barrelRoll() {
     if (rolling) return;

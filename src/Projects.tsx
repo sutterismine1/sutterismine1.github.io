@@ -38,6 +38,10 @@ const Projects: React.FC = () => {
         });
     };
 
+    useEffect(() => {
+        document.title = 'Projects - Stephen Stefanidis';
+    }, []);
+
 
 
     function recursionTrick() {

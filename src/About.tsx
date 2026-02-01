@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import "./About.css";
 //import Hamburger from './components/Hamburger.tsx';
 
 function About(){
+    useEffect(() => {
+        document.title = 'About - Stephen Stefanidis';
+    }, []);
     return (
         <div className="about-container">
             <h1 className="about-title">About Me</h1>
@@ -14,9 +18,9 @@ function About(){
             <section>
                 <h2>Programming Languages</h2>
                 <p>
-                    I primarily work with Python and JavaScript/TypeScript. I also have experience
-                    with Java, C# and C++ through academic and personal projects. Lately, I've been learning
-                    Rust using the Brown University interactive <a href="https://rust-book.cs.brown.edu/" target="_blank" rel="noopener noreferrer"><em>Rust Programming Language</em></a> book, and I enjoy how it forces
+                    I primarily work with <span className="programming-language">Python</span> and <span className="programming-language">JavaScript/TypeScript</span>. I also have experience
+                    with <span className="programming-language">Java</span>, <span className="programming-language">C#</span> and <span className="programming-language">C++</span> through academic and personal projects. Lately, I've been learning
+                    <span className="programming-language"> Rust</span> using the Brown University interactive <a href="https://rust-book.cs.brown.edu/" target="_blank" rel="noopener noreferrer"><em>Rust Programming Language</em></a> book, and I enjoy how it forces
                     you to think carefully about correctness and ownership.
                 </p>
             </section>
