@@ -38,7 +38,7 @@ function Home({ setIsOpen }: { setIsOpen: (isOpen: boolean) => void }) {
           <button className="name" onClick={() =>playName('Stephen')}>Stephen</button>
           <button className="name" onClick={() =>playName('Stefanidis')}>Stefanidis</button>
         </div>
-        <h3 className='role'>Computer science graduate focused on building things that work and understanding why they work.</h3>
+        <h3 className='role'>Computer science graduate focused on building reliable software and understanding why it works.</h3>
       </div>
       {/* Navigation Buttons */}
       <nav className="nav vertical-nav" data-nosnippet>
