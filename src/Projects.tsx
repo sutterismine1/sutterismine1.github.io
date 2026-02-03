@@ -142,8 +142,8 @@ const Projects: React.FC = () => {
                         )}
                         <div className="project-content">
                             <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <div className="tags">
+                            <p className="project-description">{project.description}</p>
+                            <div className="tags" aria-label={`Tags for ${project.title}`}>
                                 {project.tags.map((tag) => (
                                     <span key={tag} className="tag">{tag}</span>
                                 ))}

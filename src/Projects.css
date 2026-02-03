@@ -4,16 +4,18 @@
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transition: transform 0.35s ease-in-out;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.2s ease;
 }
 
-@media (hover: hover) and (pointer: fine) {
+/* Hover effect for devices that support hover 
+   Removed to not imply interactivity where there is none*/
+/*@media (hover: hover) and (pointer: fine) {
   .project-card:hover {
     transform: scale(1.03);
   }
-}
+}*/
 
 
 .projects-grid {
@@ -32,6 +34,10 @@
 
 .project-content {
     flex-grow: 1;
+}
+
+.project-description{
+    margin-bottom: 0;
 }
 
 .project-link {
@@ -57,28 +63,34 @@
 
 .tag{
     background-color: var(--tertiary-color);
-    color: white;
+    color: var(--primary-color);
     padding: 0.2em 0.6em;
     border-radius: 6px;
     font-size: 0.8em;
-    margin-right: 0.4em;
-    transition: background-color 0.5s ease;
+    margin-left: 0.4em;
+    margin-top: 0.6em;
+    transition: background-color 0.2s ease;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 1299px) {
     .projects-grid {
         grid-template-columns: repeat(3, minmax(auto, 500px));
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 976px) {
     .projects-grid {
         grid-template-columns: repeat(2, minmax(auto, 500px));
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .projects-grid {
         grid-template-columns: repeat(1, minmax(auto, 500px));
     }

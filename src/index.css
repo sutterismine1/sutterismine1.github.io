@@ -5,6 +5,7 @@
 
   color-scheme: light dark;
   background-color: var(--primary-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -63,7 +64,7 @@ button {
   font-family: inherit;
   background-color: var(--secondary-color);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.2s;
 }
 button:hover {
   /*outline: 2px solid #5b6370;*/
@@ -71,7 +72,7 @@ button:hover {
 }
 button.secondary{
   background-color: var(--tertiary-color);
-  color: white;
+  color: var(--primary-color);
 }
 button.secondary:hover{
   /*outline: 2px solid #1e848b;*/
@@ -111,5 +112,5 @@ button:focus-visible {
 }
 
 html {
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }

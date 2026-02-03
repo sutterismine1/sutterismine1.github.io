@@ -31,7 +31,7 @@ function App() {
       <div className="top-menu">
         {isHome ? null 
         : (
-          <Link className="home-button" to={"/"} onClick={() => setIsOpen(false)}><FaHome className="home-icon" size={32} /></Link>
+          <Link aria-label="Home Button" className="home-button" to={"/"} onClick={() => setIsOpen(false)}><FaHome title="Home" className="home-icon" size={32} /></Link>
         )}
         <nav className="nav desktop-nav">
           <LinkButton to="/about">About</LinkButton>

@@ -12,7 +12,7 @@ function About(){
             <p>
                 Hello! I'm Stephen Stefanidis, a Computer Science (Co-op) student at Brock University, graduating in Spring 2026.  
                 I've completed all my coursework and co-op terms and am currently focusing on gaining practical experience through 
-                a full-time position. I’m currently based in the Niagara region of Ontario, Canada, and open to opportunities across the country. I love coding and building web applications, and I am always eager to learn new technologies 
+                a full-time position. I'm currently based in the Niagara region of Ontario, Canada, and open to opportunities across the country. I love coding and building web applications, and I am always eager to learn new technologies 
                 and improve my skills.
             </p>
             <section>
