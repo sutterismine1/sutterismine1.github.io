@@ -209,6 +209,10 @@
   height: 100%;
 }
 
+.theme-toggle__classic:hover {
+  color: var(--link-hover-color);
+}
+
 .theme-toggle-wrapper{
   width: 46px;
   height: 46px;
