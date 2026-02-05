@@ -21,6 +21,7 @@ export default function Contact() {
                 id="email"
                 type="email" 
                 name="email"
+                style={{fontFamily: "monospace"}}
                 placeholder="Include your email if you'd like a reply (optional)"
             />
             <ValidationError 
@@ -35,6 +36,7 @@ export default function Contact() {
                 style ={{ minHeight: "150px" }}
                 id="message"
                 name="message"
+                style={{fontFamily: "monospace"}}
                 placeholder="Feel free to ask me questions, or just say hi!"
             />
             <ValidationError 
