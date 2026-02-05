@@ -33,10 +33,9 @@ export default function Contact() {
                 Message
             </label>
             <textarea
-                style ={{ minHeight: "150px" }}
+                style ={{ minHeight: "150px", fontFamily: "monospace"}}
                 id="message"
                 name="message"
-                style={{fontFamily: "monospace"}}
                 placeholder="Feel free to ask me questions, or just say hi!"
             />
             <ValidationError 
