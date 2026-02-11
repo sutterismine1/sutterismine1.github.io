@@ -209,8 +209,10 @@
   height: 100%;
 }
 
-.theme-toggle__classic:hover {
-  color: var(--link-hover-color);
+@media (hover: hover) and (pointer: fine) {
+  .theme-toggle__classic:hover {
+    color: var(--link-hover-color);
+  }
 }
 
 .theme-toggle-wrapper{
